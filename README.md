@@ -63,9 +63,8 @@ and start **Live Server**.
   https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg
   (accessed 23 Sep 2026), saved as a PNG at its real size of 176 x 89 pixels. It replaces the
   smaller, blurred copy of the logo in the lab files.
-- Generative AI: the markup was produced with assistance from Claude (Anthropic,
-  Claude Opus 5.5, September 2026). The prompts used and how the output was used are
-  recorded in the comment at the top of `outline.html`, as the unit requires.
+- Generative AI: the HTML markup of `outline.html` and this README were generated with
+  Claude (Anthropic, Claude Opus 5.5, September 2026), as noted in a comment in `outline.html`.
 
 ## Author
 
