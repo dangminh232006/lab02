@@ -3,20 +3,24 @@
     outline.html - the COS10026 unit outline marked up as a web page.
     COS10026 Web Technology Project, Week 02 Lab Exercise: HTML Page with Essential Elements.
     Author: Bui Dang Minh (105716425)
-
-    Generative AI acknowledgement (unit requirement):
-    Markup produced with assistance from Claude (Anthropic, Claude Opus 5.5, September 2026)
-    through Claude Code, from these prompts (original Vietnamese, English meaning in brackets):
-      "làm lab 2 trong phần module week 2 cho t" [complete the Week 2 lab for me]
-      "sử dụng đúng kiến thức môn và ko dùng các kiến thức cao siêu hơn ko có trong môn"
-      [use only what this unit teaches, nothing more advanced]
-    The output is the markup on this page. It uses only elements from the Week 1 and Week 2
-    unit materials and is checked with the W3C Markup Validation Service.
 -->
 <html lang="en">
 
 <head>
+    <!-- The charset meta stays near the top: the W3C validator reports an error when it comes after the first 1024 bytes -->
     <meta charset="utf-8">
+    <!--
+        Generative AI acknowledgement (unit requirement):
+        Markup produced with assistance from Claude (Anthropic, Claude Opus 5.5, September 2026)
+        through Claude Code, from these prompts (original Vietnamese, English meaning in brackets):
+          "làm lab 2 trong phần module week 2 cho t" [complete the Week 2 lab for me]
+          "sử dụng đúng kiến thức môn và ko dùng các kiến thức cao siêu hơn ko có trong môn"
+          [use only what this unit teaches, nothing more advanced]
+          "tìm đúng logo swinburne rồi thay vào đi" [find the correct Swinburne logo and use it]
+        The output is the markup on this page and the logo PNG saved from the official Swinburne SVG.
+        The markup uses only elements from the Week 1 and Week 2 unit materials and is checked with
+        the W3C Markup Validation Service.
+    -->
     <meta name="description" content="Unit outline for COS10026 Web Technology Project at Swinburne University of Technology: aims, unit learning outcomes, content and assessments.">
     <meta name="keywords" content="COS10026, Web Technology Project, unit outline, Swinburne, learning outcomes, assessments">
     <meta name="author" content="Bui Dang Minh">
@@ -29,8 +33,11 @@
     <header>
         <!-- One h1 holds the whole title; br keeps its three lines as they appear in the PDF -->
         <h1>Unit Outline<br>COS10026<br>Web Technology Project</h1>
-        <!-- Relative path to the images folder; width and height are the real image size (158 x 79 pixels) -->
-        <img src="images/swin_logo.png" alt="Swinburne University of Technology logo" width="158" height="79">
+        <!-- Official Swinburne logo, adapted from:
+             https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg
+             Accessed: 23 Sep 2026. Saved as a PNG at its real size, so width and height are 176 x 89 pixels.
+             The relative path points into the images folder. -->
+        <img src="images/swin_logo.png" alt="Swinburne University of Technology logo" width="176" height="89">
     </header>
 
     <!-- Thematic break between the title area and the outline content, matching the line in the PDF -->
@@ -66,8 +73,10 @@
         </ul>
 
         <h2>Assessments Overview</h2>
-        <!-- Column titles sit in thead as th cells so they are marked as headings, not data -->
-        <table>
+        <!-- Column titles sit in thead as th cells so they are marked as headings, not data.
+             border="1" draws the cell borders so the columns do not run together. The Week 2 lecture
+             notes this attribute is deprecated and that CSS styles tables better; CSS starts in Week 4. -->
+        <table border="1">
             <thead>
                 <tr>
                     <th>Tasks and Details</th>

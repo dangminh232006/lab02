@@ -10,7 +10,7 @@ follows the layout of the PDF version of the outline.
 | File | Description |
 |------|-------------|
 | `outline.html` | The unit outline marked up in HTML |
-| `images/swin_logo.png` | Swinburne logo shown in the page header |
+| `images/swin_logo.png` | Official Swinburne logo (176 x 89 PNG) shown in the page header |
 | `README.md` | This document |
 
 ## Steps Followed
@@ -30,7 +30,7 @@ follows the layout of the PDF version of the outline.
 - **Paragraphs and line breaks** — `<p>`, and `<br>` to keep the three lines of the title
 - **Horizontal rules** — `<hr>` to separate the header and the footer from the content
 - **Lists** — `<ol>` for the numbered learning outcomes, `<ul>` for the content topics
-- **Table** — `<table>` with `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` for the assessments
+- **Table** — `<table border="1">` with `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` for the assessments
 - **Image** — `<img>` with `alt`, `width` and `height`, linked by a relative path to the `images` folder
 - **Anchors** — a link to the Swinburne website and a `mailto:` link to the student email
 - **Phrase tag** — `<strong>` for the ULO codes
@@ -41,7 +41,9 @@ follows the layout of the PDF version of the outline.
 
 `outline.html` was checked with the
 [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
-after each step: no errors and no warnings.
+after each step: no errors. The only warning is that the table `border` attribute is
+obsolete; the Week 2 lecture notes the same and that CSS, taught from Week 4, styles tables better.
+It stays so the table columns do not run together.
 
 ## How to View
 
@@ -57,6 +59,10 @@ and start **Live Server**.
 ## Acknowledgements
 
 - Page text: COS10026 Unit Outline, Swinburne University of Technology, supplied with the lab.
+- Logo: official Swinburne University of Technology logo,
+  https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg
+  (accessed 23 Sep 2026), saved as a PNG at its real size of 176 x 89 pixels. It replaces the
+  smaller, blurred copy of the logo in the lab files.
 - Generative AI: the markup was produced with assistance from Claude (Anthropic,
   Claude Opus 5.5, September 2026). The prompts used and how the output was used are
   recorded in the comment at the top of `outline.html`, as the unit requires.
